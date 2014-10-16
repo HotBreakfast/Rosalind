@@ -1,3 +1,4 @@
+#Python 2.7.5
 def StartingPositions(Pattern, Genome):
     positions = []
     for i in range(0, len(Genome)-len(Pattern)):
