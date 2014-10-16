@@ -1,3 +1,4 @@
+#Python 2.7.5
 def ReverseComplement(Pattern):
     reverse = list(Pattern[::-1])
     reverse_complement = []
