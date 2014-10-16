@@ -1,3 +1,4 @@
+#Python 2.7.5
 def PatternCount(Text, Pattern):
     count = 0
 
