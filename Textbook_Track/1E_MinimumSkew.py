@@ -23,7 +23,6 @@ def MinimumSkew(Genome):
 
 
 file_name = raw_input("Enter the file name: ")
-
 try:
     file_handle = open(file_name)
 except:
