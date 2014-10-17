@@ -1,3 +1,4 @@
+##Python 2.7.5
 def MinimumSkew(Genome):
     Skew=0
     skew_values = [0]
