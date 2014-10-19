@@ -1,4 +1,5 @@
 #Python 2.7.5
+#Code works for k=8 and d=2, but for larger cases it is way too slow
 import itertools
 
 def Permutations(k):
@@ -41,11 +42,3 @@ def FrequentWordsMismatches(Text, k, d):
             FrequentPatterns.append(permutations[i])
             
     return " ".join(FrequentPatterns[::-1])
-
-
-#Works for following example, but way too slow for larger cases
-text ="CAGTCGCCATTCGTCGGCATCGCAGGTACAGCAGTCGTCGGTACCATCCATCCATCCATTCGCCATGTAGCAGCAGTACCATCCATCCATTCGCCATCCATCCATGTAGTACAGCCATTCGCAGGTAGTAGCACCATCAGGCATCGGCAGCATCGGTAGCATCGCAGTCGGCACCATGTACCATCCATGCAGCATCGCAGCCATCCATTCGGTATCGCAGCAGTCGCCATCCATTCGGCACAGTCGTCGGTACCATTCGGTAGTACAGGTAGCACAGGTACAGGTACCATGCACCATCCATCCATGTACCATGCACCATCCATCAGTCGGCACAGGTACCATGCAGCATCGCAGTCG"
-k=8
-d=2
-
-print FrequentWordsMismatches(text, k, d)
