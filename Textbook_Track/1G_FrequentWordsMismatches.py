@@ -1,7 +1,6 @@
 #Python 2.7.5
 
 import itertools
-
 def Permutations(k):
     seq="ATCG"
     permutations = []
