@@ -39,7 +39,6 @@ def CyclicSpectrum(Peptide):
             if i > 0 and j < len(Peptide):
                 CyclicSpectrum.append(peptideMass - (PrefixMass[j]-PrefixMass[i]))
 
-            
     CyclicSpectrum = map(int,CyclicSpectrum)
     CyclicSpectrum.sort()
     
