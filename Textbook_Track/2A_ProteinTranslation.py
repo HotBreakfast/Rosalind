@@ -46,11 +46,9 @@ except:
     exit()
 
 lines = file_handle.readlines()
-
 pattern = lines[0].rstrip()
 
 translation = ProteinTranslation(pattern)
-
 output  = open("output.txt", "w")
 output.write(translation)
 output.close()
