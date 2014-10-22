@@ -1,5 +1,5 @@
 #Python 2.7.5 
-codon_table = {
+CODON_TABLE = {
     "A": ["GCU", "GCC", "GCA", "GCG"],
     "C": ["UGU", "UGC"],
     "D": ["GAU", "GAC"],
@@ -29,8 +29,8 @@ def ProteinTranslation(Pattern):
     i=0
     while i < len(Pattern):
         Codon = Pattern[i:i+3]
-        for j in codon_table:
-            for k in codon_table[j]:
+        for j in CODON_TABLE:
+            for k in CODON_TABLE[j]:
                 if k==Codon:
                     Protein.append(j)
         i=i+3
