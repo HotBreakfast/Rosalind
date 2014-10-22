@@ -54,7 +54,6 @@ except:
     exit()
 lines = file_handle.readlines()
 peptide = lines[0].rstrip()
-
 cyclic_spectrum = CyclicSpectrum(peptide)
 output  = open("output.txt", "w")
 output.write(cyclic_spectrum)
